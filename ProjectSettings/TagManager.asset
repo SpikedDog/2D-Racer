@@ -41,6 +41,9 @@ TagManager:
   - name: Background
     uniqueID: 3913783081
     locked: 0
+  - name: Smoke
+    uniqueID: 4104595801
+    locked: 0
   - name: Skidmarks
     uniqueID: 4046235883
     locked: 0

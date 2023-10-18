@@ -31,7 +31,7 @@ public class WheelTrailRendererHandler : MonoBehaviour
     void Update()
     {
         //If the car tires are screeching them we'l emit a trail
-        if (topDownCarController.IsTireScreeching(out float lateralVelocity, out bool isBreaking))
+        if (topDownCarController.IsTireScreeching(out float lateralVelocity, out bool isBraking))
         {
             trailRenderer.emitting = true;
         }

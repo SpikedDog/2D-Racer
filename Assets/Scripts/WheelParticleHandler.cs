@@ -42,10 +42,10 @@ public class WheelParticleHandler : MonoBehaviour
         particleEmissionRate = Mathf.Lerp(particleEmissionRate, 0, Time.deltaTime * 5);
         particleSystemEmissionModule.rateOverTime = particleEmissionRate;
 
-        if (topDownCarController.IsTireScreeching(out float lateralVelocity, out bool isBreaking))
+        if (topDownCarController.IsTireScreeching(out float lateralVelocity, out bool isBraking))
         {
             //If the car tires are screeching then we'll emit smoke. If the player is breaking then emitt a lot of smoke.
-            if (isBreaking)
+            if (isBraking)
             {
                 particleEmissionRate = 30;
             }
