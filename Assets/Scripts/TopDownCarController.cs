@@ -8,7 +8,7 @@ public class TopDownCarController : MonoBehaviour
     public float driftFactor = 0.95f;
     public float accelFactor = 30.0f;
     public float turnFactor = 3.5f;
-    public float maxSpeed = 20;
+    public float maxSpeed = 20; 
 
     //Local Variables
     float accelInput = 0;
@@ -128,5 +128,11 @@ public class TopDownCarController : MonoBehaviour
     {
         steerInput = inputVector.x;
         accelInput = inputVector.y;
+    }
+
+    // Getting the velocity of the car for our engine SFX
+    public float GetVelocityMagnitude()
+    {
+        return carRigidbody2D.velocity.magnitude;
     }
 }
