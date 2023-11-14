@@ -32,7 +32,7 @@ public class CarSFXHandler : MonoBehaviour
     void Update()
     {
         UpdateEngineSFX();
-        UpdateTireScreechingSFX();
+        UpdateTiresScreechingSFX();
     }
 
     private void UpdateEngineSFX()
