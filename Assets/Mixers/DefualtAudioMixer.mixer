@@ -48,7 +48,9 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 8d25060d21769634cb2b53bb519c9b58
+    name: SFXVolume
   m_AudioMixerGroupViews:
   - guids:
     - 932dc89e64bf4cd41bdfc38f0a780de4
@@ -102,7 +104,8 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 8f57364ca8584444ea61df733816cf37
-  m_FloatValues: {}
+  m_FloatValues:
+    c100990ca838e4f3592e28ab13f36831: -7.436929
   m_TransitionOverrides: {}
 --- !u!244 &1639940260532052063
 AudioMixerEffectController:
@@ -115,6 +118,44 @@ AudioMixerEffectController:
   m_EffectName: Attenuation
   m_MixLevel: 7d5b2dd18e3e1c1419f27155a55966c7
   m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &2038697292468077551
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 125649fe647d5d7468735b458018789d
+  m_EffectName: Flange
+  m_MixLevel: 7930712031bf24146a1806026cbaa739
+  m_Parameters:
+  - m_ParameterName: Drymix
+    m_GUID: a009cc4d341410f4cb19f2b665be4c4c
+  - m_ParameterName: Wetmix
+    m_GUID: c17bae657bc40944db672618c3cdc8d5
+  - m_ParameterName: Depth
+    m_GUID: 7c518bb0de284b440acec1b87bc4d177
+  - m_ParameterName: Rate
+    m_GUID: 7a9c1245152f57442b0ae88ddef77f6a
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &2743895601103400212
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 1132d0ce101ff904da4a655dc8e39255
+  m_EffectName: Distortion
+  m_MixLevel: e87eb365d6c181b4ca539c9f604dbea4
+  m_Parameters:
+  - m_ParameterName: Level
+    m_GUID: 46e3c8144e537d84d8ac097c453f1319
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
@@ -133,6 +174,8 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 5788534818539024082}
+  - {fileID: 2038697292468077551}
+  - {fileID: 2743895601103400212}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
