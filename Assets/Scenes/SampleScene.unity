@@ -147,19 +147,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225952484}
-  serializedVersion: 2
-<<<<<<< Updated upstream
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.36, y: -0.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-=======
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.36, y: -1.4545523, z: 0}
-  m_LocalScale: {x: 1, y: 1.8109465, z: 1}
->>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 899205040}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &225952486
 TrailRenderer:
@@ -291,19 +285,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256367630}
-  serializedVersion: 2
-<<<<<<< Updated upstream
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.36, y: -0.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-=======
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.36, y: -1.4545523, z: 0}
-  m_LocalScale: {x: 1, y: 1.8109465, z: 1}
->>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 899205040}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &256367632
 MonoBehaviour:
@@ -5133,6 +5121,7 @@ GameObject:
   - component: {fileID: 356782083}
   - component: {fileID: 356782085}
   - component: {fileID: 356782081}
+  - component: {fileID: 356782086}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -5191,7 +5180,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356782080}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.9375191, y: 1.9375191, z: 1.9375191}
@@ -5201,6 +5189,7 @@ Transform:
   - {fileID: 1672168110}
   - {fileID: 463727429}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &356782085
 MonoBehaviour:
@@ -5214,8 +5203,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e88fc05a0065954a8d3ad02fb94a549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-=======
 --- !u!114 &356782086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5228,11 +5215,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb2e1556bccb7ec46b31c85208e73dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
+  audioMixer: {fileID: 24100000, guid: 8af2f1aee2873be458dffb13cc83d67a, type: 2}
   tiresScreechingAudioSource: {fileID: 1605864866}
   engineAudioSource: {fileID: 2073980569}
   carHitAudioSource: {fileID: 1145930200}
->>>>>>> Stashed changes
 --- !u!1 &426010003
 GameObject:
   m_ObjectHideFlags: 0
@@ -5259,19 +5245,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426010003}
-  serializedVersion: 2
-<<<<<<< Updated upstream
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.36, y: -0.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-=======
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.36, y: -1.4545523, z: 0}
-  m_LocalScale: {x: 1, y: 1.8109465, z: 1}
->>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 899205040}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &426010005
 MonoBehaviour:
@@ -10113,13 +10093,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463727428}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 356782084}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &463727430
 PolygonCollider2D:
@@ -10256,13 +10236,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &899205039
 GameObject:
@@ -10288,7 +10268,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899205039}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.75, z: 1}
@@ -10299,6 +10278,7 @@ Transform:
   - {fileID: 256367631}
   - {fileID: 426010004}
   m_Father: {fileID: 356782084}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &899205041
 SpriteRenderer:
@@ -10349,11 +10329,9 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream
-=======
 --- !u!1 &1145930199
 GameObject:
   m_ObjectHideFlags: 0
@@ -10474,13 +10452,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145930199}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1672168110}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1605864864
 GameObject:
@@ -10506,13 +10484,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605864864}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1672168110}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1605864866
 AudioSource:
@@ -10610,7 +10588,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
->>>>>>> Stashed changes
 --- !u!1 &1672168109
 GameObject:
   m_ObjectHideFlags: 0
@@ -10634,14 +10611,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1672168109}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2073980568}
+  - {fileID: 1145930201}
+  - {fileID: 1605864865}
   m_Father: {fileID: 356782084}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1757815226
 GameObject:
@@ -10667,19 +10646,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757815226}
-  serializedVersion: 2
-<<<<<<< Updated upstream
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.36, y: -0.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-=======
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.36, y: -1.4545523, z: 0}
-  m_LocalScale: {x: 1, y: 1.8109465, z: 1}
->>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 899205040}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &1757815228
 TrailRenderer:
@@ -10862,22 +10835,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915512448}
-  serializedVersion: 2
-<<<<<<< Updated upstream
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 57.644726, y: 29.170448, z: 7.3973536}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 2.517, y: 0.662, z: 0}
   m_LocalScale: {x: 30.237, y: 8.5875, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1915512451
 BoxCollider2D:
@@ -10924,7 +10888,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.13564847, y: 0.13748688}
   m_EdgeRadius: 0
->>>>>>> Stashed changes
 --- !u!1 &2073980567
 GameObject:
   m_ObjectHideFlags: 0
@@ -10934,6 +10897,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2073980568}
+  - component: {fileID: 2073980569}
   m_Layer: 0
   m_Name: CarEngineSFX
   m_TagString: Untagged
@@ -10948,23 +10912,17 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073980567}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1672168110}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1660057539 &9223372036854775807
-SceneRoots:
+--- !u!82 &2073980569
+AudioSource:
   m_ObjectHideFlags: 0
-<<<<<<< Updated upstream
-  m_Roots:
-  - {fileID: 519420032}
-  - {fileID: 1915512450}
-  - {fileID: 356782084}
-=======
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -10974,7 +10932,7 @@ SceneRoots:
   OutputAudioMixerGroup: {fileID: 5607109905551934544, guid: 8af2f1aee2873be458dffb13cc83d67a, type: 2}
   m_audioClip: {fileID: 8300000, guid: f5c2f5d108df570489d4636ddb751e6b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -11058,11 +11016,3 @@ SceneRoots:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1660057539 &9223372036854775807
-SceneRoots:
-  m_ObjectHideFlags: 0
-  m_Roots:
-  - {fileID: 356782084}
-  - {fileID: 519420032}
-  - {fileID: 1915512450}
->>>>>>> Stashed changes
