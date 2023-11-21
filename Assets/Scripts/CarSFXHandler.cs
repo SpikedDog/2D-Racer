@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class CarSFXHandler : MonoBehaviour
 {
+    [Header("Mixers")]
+    public AudioMixer audioMixer;
+
     [Header("Audio Sources")]
     public AudioSource tiresScreechingAudioSource;
     public AudioSource engineAudioSource;
@@ -25,7 +29,7 @@ public class CarSFXHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioMixer.SetFloat("SFXVolume", 0.5f);
     }
 
     // Update is called once per frame
@@ -73,4 +77,20 @@ public class CarSFXHandler : MonoBehaviour
         // Fade out the tire screech SFX if we are not screeching
         else tiresScreechingAudioSource.volume = Mathf.Lerp(tiresScreechingAudioSource.volume, 0, Time.deltaTime * 10);
     }
+    private void OnCollisionEnter2D(Collision2D collision2D)
+    {
+        //Get the relative velocity of the collision
+        float relativeVelocity = collision2D.relativeVelocity.magnitude;
+
+        float volume = relativeVelocity * 0.1f;
+
+        carHitAudioSource.pitch = Random.Range(0.95f, 1.05f);
+        carHitAudioSource.volume = volume;
+
+        if (!carHitAudioSource.isPlaying)
+        {
+            carHitAudioSource.Play();
+        }
+    }
+
 }
