@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - DontChangeLayer
+  - Car
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
@@ -40,6 +43,9 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 3913783081
+    locked: 0
+  - name: Checkpoints
+    uniqueID: 2477702905
     locked: 0
   - name: Smoke
     uniqueID: 4104595801
