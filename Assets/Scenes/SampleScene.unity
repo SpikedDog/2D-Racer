@@ -5692,7 +5692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFinishLine: 1
-  checkPointNumber: 1
+  checkPointNumber: 9
 --- !u!61 &334969068
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5803,7 +5803,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1658893263}
-  lapText: {fileID: 845717770}
 --- !u!1 &356782080
 GameObject:
   m_ObjectHideFlags: 0
@@ -5927,6 +5926,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f80c61d483f24c24296c46651a0eac7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerText: {fileID: 1658893263}
+  lapText: {fileID: 845717770}
 --- !u!1 &360236548
 GameObject:
   m_ObjectHideFlags: 0
@@ -11452,6 +11453,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -11533,6 +11535,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a1db12510189a9438fc7cf7f1e4761a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CarLapCounters: []
 --- !u!1 &608076666
 GameObject:
   m_ObjectHideFlags: 0
@@ -12843,7 +12858,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Lap:'
+  m_Text: 'Last Lap:'
 --- !u!222 &845717771
 CanvasRenderer:
   m_ObjectHideFlags: 0

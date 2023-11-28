@@ -21,9 +21,8 @@ public class CheckpointManager : MonoBehaviour
             LapCounter.OnPassCheckpoint += OnPassCheckpoint;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnPassCheckpoint(CarLapCounter carLapCounter)
     {
-        
+        Debug.Log($"Event: {carLapCounter.gameObject.name} passed a checkpoint");
     }
 }
