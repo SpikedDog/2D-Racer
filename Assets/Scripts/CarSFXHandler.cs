@@ -18,12 +18,12 @@ public class CarSFXHandler : MonoBehaviour
     float tireScreechPitch = 0.5f;
 
     // Components
-    TopDownCarController topDownCarController;
+    TopDownController topDownController;
 
     // Awake is called when the script instance is being loaded
     private void Awake()
     {
-        topDownCarController = GetComponentInParent<TopDownCarController>();
+        topDownController = GetComponentInParent<TopDownController>();
     }
 
     // Start is called before the first frame update
@@ -42,7 +42,7 @@ public class CarSFXHandler : MonoBehaviour
     private void UpdateEngineSFX()
     {
         // Handle engine SFX
-        float velocityMagnitude = topDownCarController.GetVelocityMagnitude();
+        float velocityMagnitude = topDownController.GetVelocityMagnitude();
 
         // Increase the engine volume as the car goes faster
         float desiredEngineVolume = velocityMagnitude * 0.0f;
@@ -60,7 +60,7 @@ public class CarSFXHandler : MonoBehaviour
 
     private void UpdateTiresScreechingSFX()
     {
-        if (topDownCarController.IsTireScreeching(out float lateralVelocity, out bool isBraking))
+        if (topDownController.IsTireScreeching(out float lateralVelocity, out bool isBraking))
         {
             if (isBraking)
             {
@@ -77,6 +77,7 @@ public class CarSFXHandler : MonoBehaviour
         // Fade out the tire screech SFX if we are not screeching
         else tiresScreechingAudioSource.volume = Mathf.Lerp(tiresScreechingAudioSource.volume, 0, Time.deltaTime * 10);
     }
+
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
         //Get the relative velocity of the collision
@@ -92,5 +93,4 @@ public class CarSFXHandler : MonoBehaviour
             carHitAudioSource.Play();
         }
     }
-
 }

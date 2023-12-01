@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - DontChangeLayer
   - Car
   - Checkpoint
   layers:
@@ -41,18 +40,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 3913783081
-    locked: 0
-  - name: Checkpoints
-    uniqueID: 2477702905
-    locked: 0
-  - name: Smoke
-    uniqueID: 4104595801
-    locked: 0
-  - name: Skidmarks
-    uniqueID: 4046235883
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 340211643
+    locked: 0
+  - name: Checkpoint
+    uniqueID: 2250847445
+    locked: 0
+  - name: Car
+    uniqueID: 229501683
     locked: 0

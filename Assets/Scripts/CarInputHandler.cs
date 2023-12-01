@@ -5,12 +5,12 @@ using UnityEngine;
 public class CarInputHandler : MonoBehaviour
 {
     //Components
-    TopDownCarController topDownCarController;
+    TopDownController topDownCarController;
 
     //Awake is called when the script istance is being loaded
     void Awake()
     {
-        topDownCarController = GetComponent<TopDownCarController>();
+        topDownCarController = GetComponent<TopDownController>();
     }
 
     // Update is called once per frame
